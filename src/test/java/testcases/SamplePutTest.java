@@ -10,7 +10,7 @@ import utility.Employee;
 
 public class SamplePutTest extends Base {
 
-    RequestSpecification httpRequest = Base.setUp();
+    //    RequestSpecification httpRequest = Base.setUp();
     Employee emp = new Employee("testGsonPut", "ThoughtWorks");
 
     @Test

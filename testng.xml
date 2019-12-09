@@ -2,15 +2,14 @@
 
 <suite name="Suite1">
     <test name="test1" >
-        <groups>
-            <run>
-                <include name="smoke"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="testcases.SampleGetTest1" />
-            <!--<class name="SampleGetTest2" />-->
-            <!--<class name="SamplePostTest" />-->
-        </classes>
+        <!--        <groups>-->
+        <!--            <run>-->
+        <!--                <include name="smoke"/>-->
+        <!--            </run>-->
+        <!--        </groups>-->
+        <packages>
+            <package name="testcases" />
+
+        </packages>
     </test>
 </suite>

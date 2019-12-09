@@ -4,11 +4,15 @@ import com.google.gson.Gson;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 import org.apache.http.HttpRequest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import io.restassured.response.Response;
 import com.google.gson.Gson;
 
 public class Base {
+
+    public RequestSpecification httpRequest;
 
     private static String propertyFileName = "src/test/resources/test1.properties";
 
@@ -16,7 +20,12 @@ public class Base {
         Helper.loadProperties(propertyFileName);
     }
 
-    @BeforeTest
+    @BeforeClass
+    public void beforeTests()
+    {
+        httpRequest = setUp();
+    }
+
     public static RequestSpecification setUp(){
         RestAssured.baseURI = getBaseURL();
         return RestAssured.given();
@@ -33,7 +42,6 @@ public class Base {
     public static String getPassword(){
         return Helper.getPropertyValue("password");
     }
-
 
     public static String getContentType (Response response){
         return response.getHeader("Content-Type");

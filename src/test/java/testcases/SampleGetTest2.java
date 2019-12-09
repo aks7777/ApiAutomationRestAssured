@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class SampleGetTest2 extends Base {
 
-    RequestSpecification httpRequest = Base.setUp();
+//    RequestSpecification httpRequest = Base.setUp();
 
     //create separate test methods for different assertions
     @Test (priority = 0)

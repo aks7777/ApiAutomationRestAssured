@@ -9,8 +9,6 @@ import utility.Employee;
 
 public class SamplePostTest extends Base {
 
-    RequestSpecification httpRequest = Base.setUp();
-
     @Test
     public void createNewRecord() {
         httpRequest.header("Content-Type", "application/json");

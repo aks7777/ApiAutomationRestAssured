@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 public class SamplePostTestWithGson extends Base {
 
-    RequestSpecification httpRequest = Base.setUp();
+    //    RequestSpecification httpRequest = Base.setUp();
     Employee emp = new Employee("testGsonPut2", "ThoughtWorks", "Haryana","CityABC");
 
     @Test

@@ -10,7 +10,7 @@ import utility.Base;
 
 public class WithBasicAuthGetTest extends Base {
 
-    RequestSpecification httpRequest = Base.setUp();
+    //    RequestSpecification httpRequest = Base.setUp();
     @Test
     public void getDetails()
     {
