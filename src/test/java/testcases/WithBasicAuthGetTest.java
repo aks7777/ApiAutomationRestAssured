@@ -9,8 +9,7 @@ import org.testng.annotations.Test;
 import utility.Base;
 
 public class WithBasicAuthGetTest extends Base {
-
-    //adding comment testing - git
+    
     RequestSpecification httpRequest = Base.setUp();
     @Test
     public void getDetails()
